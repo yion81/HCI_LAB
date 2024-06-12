@@ -1,0 +1,436 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#home {
+    text-align: center;
+    padding: 0;
+}
+
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide video {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.carousel-text h2 {
+    font-size: 2em;
+}
+
+.carousel-text p {
+    font-size: 1.2em;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-top: 0.5em;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#gallery {
+    padding: 2em 0;
+    text-align: center;
+}
+
+#gallery h3 {
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    #home {
+        padding: 2em 1em;
+    }
+
+    #gallery {
+        padding: 2em 1em;
+    }
+
+    .gallery-slide img {
+        width: 90%;
+    }
+
+    .car {
+        width: 90%;
+    }
+
+    .brands-carousel img{
+        width: 40%;
+    }
+
+    .carousel-text {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .carousel-text h2 {
+        font-size: 1.5em;
+    }
+
+    .carousel-text p {
+        font-size: 1em;
+    }
+}
+
+.gallery-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery-slide {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.gallery-slide img {
+    width: 30%;
+    height: auto;
+    max-height: 850px;
+}
+
+
+/*  */
+#cars h2.main_text, #cars h3.main_text {
+    text-align: center;
+    font-size: 40px;
+}
+
+.brands-carousel h3 {
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+.brands-carousel {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brands-carousel img {
+    width: 20%;
+    max-width: 150px;
+    max-height: 110px;
+    margin: 10px; 
+
+    box-sizing: border-box; 
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.car {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+}
+
+.brands-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 20%;
+    height: auto;
+    object-fit: contain; /* aspect ratio */
+}
+
+/* Showroom */
+
+#showroom .body {
+    background-color: #222;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#showroom {
+    text-align: center;
+    padding: 2em 0;
+    color: #eee;
+}
+
+.showroom-jumbotron {
+    background: url('Assets/Car\ 2Home.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+.showroom-jumbotron h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.showroom-jumbotron p {
+    font-size: 1.5em;
+    margin: 0.5em 0 0;
+}
+
+.showroom-carousel {
+    max-width: 100%;
+    margin: 0 auto 2em;
+    position: relative;
+}
+
+.showroom-carousel .carousel-slide {
+    display: none;
+}
+
+.showroom-carousel .carousel-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+.showroom-gallery {
+    text-align: center;
+}
+
+.showroom-gallery h3 {
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+.showroom-gallery img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    max-height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.showroom-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* About */
+
+#about {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about h2, #about h3 {
+    color: #ccc;
+    margin-bottom: 1em;
+}
+
+#about p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.social-media {
+    margin-top: 2em;
+}
+
+.social-media h3 {
+    margin-bottom: 1em;
+    color: #ccc;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-media ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Login */
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    padding: 2em;
+    max-width: 500px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+#login h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 0.875em;
+    margin-top: 0.5em;
+    display: block;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
